@@ -217,3 +217,20 @@
   });
 
 })();
+/**
+ * Theme toggle function
+ */
+function toggleTheme() {
+  const body = document.body; // Select the body element
+  const currentTheme = body.getAttribute("data-theme"); // Get the current theme
+  if (currentTheme === "dark") {
+    body.removeAttribute("data-theme"); // Switch to light mode
+    console.log("Switched to light mode");
+  } else {
+    body.setAttribute("data-theme", "dark"); // Switch to dark mode
+    console.log("Switched to dark mode");
+  }
+}
+
+// Ensure the toggle button calls the toggleTheme function
+document.getElementById("themeToggleBtn").addEventListener("click", toggleTheme);
