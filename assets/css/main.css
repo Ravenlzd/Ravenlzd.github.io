@@ -75,10 +75,10 @@ body[data-theme="dark"] a {
 
 #themeToggle {
   position: fixed;
-  bottom: 650px;
-  right: 20px;
-  background-color: #007bff;
-  color: white;
+  bottom: 630px;
+  right: 100px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -86,7 +86,7 @@ body[data-theme="dark"] a {
   font-size: 14px;
 }
 #themeToggle:hover {
-  background-color: #0056b3;
+  background-color: #7c8e33;
 }
 :root {
   --bg-color: white;
