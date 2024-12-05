@@ -22,7 +22,7 @@
   --background-color: #000000; /* Background color for the entire website, including individual sections */
   --default-color: #fafafa; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #3d7d5b; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #18d26e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #1a1a1a; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -43,7 +43,6 @@
   --background-color: #1a1a1a;
   --surface-color: #343434;
 }
-
 :root {
   --bg-color: white;
   --text-color: black;
@@ -56,6 +55,65 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#themeToggle {
+  position: fixed;
+  bottom: 650px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+#themeToggle:hover {
+  background-color: #0056b3;
+}
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
 
 .dark-background {
   --background-color: rgba(15, 15, 15, 0.975);
@@ -341,6 +399,20 @@ h6 {
     padding: 0;
     z-index: 9997;
   }
+  :root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
   .navmenu ul {
     display: none;

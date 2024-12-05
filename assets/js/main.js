@@ -10,6 +10,21 @@
   "use strict";
 
   /**
+   * Theme toggle function
+   */
+  function toggleTheme() {
+    const body = document.body; // Select the body element
+    const currentTheme = body.getAttribute("data-theme"); // Get the current theme
+    if (currentTheme === "dark") {
+        body.removeAttribute("data-theme"); // Switch to light mode
+        console.log("Switched to light mode");
+    } else {
+        body.setAttribute("data-theme", "dark"); // Switch to dark mode
+        console.log("Switched to dark mode");
+    }
+  }
+
+  /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
   function toggleScrolled() {
