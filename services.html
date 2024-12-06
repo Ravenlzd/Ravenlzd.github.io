@@ -237,9 +237,25 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+ <button id="themeToggle" onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-</body>
-
+  <link rel="stylesheet" href="\assets\css\main.css">
+</head>
+  <body>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute("data-theme");
+            if (currentTheme === "dark") {
+                body.removeAttribute("data-theme");
+                console.log("Switched to dark mode");
+            } else {
+                body.setAttribute("data-theme", "dark");
+                console.log("Switched to light mode");
+            }
+        }
+    </script>
+    </body>
 </html>
